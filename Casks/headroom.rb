@@ -1,6 +1,6 @@
 cask "headroom" do
-  version "1.1.0"
-  sha256 "407ff8b8d552e45facc474725fce08d1247065407b2c6b00ae76ce111d36d7f1"
+  version "2.0.0"
+  sha256 "750d6534122d41ef922e3bfe244b925ae03676b4a525d3eeaf4dfe7d31982977"
 
   url "https://github.com/headconnect/headroom/releases/download/v#{version}/headroom-#{version}.dmg"
   name "headroom"
