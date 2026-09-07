@@ -1,6 +1,6 @@
 cask "range-anxiety" do
-  version "2.0.0"
-  sha256 "750d6534122d41ef922e3bfe244b925ae03676b4a525d3eeaf4dfe7d31982977"
+  version "2.1.0"
+  sha256 "ecd3697124fd1912eb520d600612f132ad8be3fd558f7f0045711397085ba9ac"
 
   url "https://github.com/headconnect/range-anxiety/releases/download/v#{version}/range-anxiety-#{version}.dmg"
   name "Range Anxiety"
