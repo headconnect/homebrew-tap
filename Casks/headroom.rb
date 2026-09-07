@@ -19,8 +19,8 @@ cask "headroom" do
   # Quit the running copy before an upgrade and start the new one afterwards.
   uninstall quit: "no.enso.headroom"
 
-  postflight do
-    system_command "/usr/bin/open", args: ["#{appdir}/headroom.app"]
+  postflight_steps do
+    run "/usr/bin/open", args: ["-b", "no.enso.headroom"]
   end
 
   # Sign out in the app before uninstalling to remove the tokens from the keychain.
