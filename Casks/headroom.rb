@@ -16,6 +16,13 @@ cask "headroom" do
 
   app "headroom.app"
 
+  # Quit the running copy before an upgrade and start the new one afterwards.
+  uninstall quit: "no.enso.headroom"
+
+  postflight do
+    system_command "/usr/bin/open", args: ["#{appdir}/headroom.app"]
+  end
+
   # Sign out in the app before uninstalling to remove the tokens from the keychain.
   zap trash: "~/Library/Preferences/no.enso.headroom.plist"
 end
