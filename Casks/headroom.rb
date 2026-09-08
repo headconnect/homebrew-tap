@@ -12,9 +12,9 @@ cask "headroom" do
     strategy :github_latest
   end
 
-  # The app is now Range Anxiety; its first launch takes over this cask's
-  # settings and keychain item.
-  deprecate! date: "2026-09-07", because: "was renamed to range-anxiety", replacement_cask: "headconnect/tap/range-anxiety"
+  # The app is now Rations (briefly Range Anxiety); its first launch takes
+  # over this cask's settings and keychain item.
+  deprecate! date: "2026-09-07", because: "was renamed to rations", replacement_cask: "headconnect/tap/rations"
 
   depends_on macos: :sonoma
 
