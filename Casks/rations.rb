@@ -16,13 +16,14 @@ cask "rations" do
 
   app "Rations.app"
 
-  postflight_steps do
-    run "/usr/bin/open", args: ["-b", "no.enso.rations"]
-  end
-
-  # Quit the running copy before an upgrade and start the new one afterwards.
+  # Quit the running copy before an upgrade so the app bundle can be replaced.
   uninstall quit: "no.enso.rations"
 
   # Sign out in the app before uninstalling to remove the tokens from the keychain.
   zap trash: "~/Library/Preferences/no.enso.rations.plist"
+
+  caveats <<~EOS
+    Rations is a menu bar app. Launch it to get started:
+      open -a Rations
+  EOS
 end
