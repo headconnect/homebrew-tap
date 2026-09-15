@@ -1,6 +1,6 @@
 cask "rations" do
-  version "2.2.1"
-  sha256 "c76534f13219b8d64ebbbe34dbfdf57388cc954295630516005b7a0215f58d4f"
+  version "2.2.2"
+  sha256 "6261ec2d820f0b5fe565fc3e881dc00da9aa1bd208d6e96f60f4a93a14be7526"
 
   url "https://github.com/headconnect/rations/releases/download/v#{version}/rations-#{version}.dmg"
   name "Rations"
